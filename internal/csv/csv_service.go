@@ -2,7 +2,6 @@ package csv
 
 import (
 	"encoding/csv"
-	"fmt"
 	"io"
 	"log"
 	"mime/multipart"
@@ -43,7 +42,6 @@ func (s *CSVService) CSVToJson(file multipart.File) ([]map[string]string) {
     }
     
     array = append(array, jsonMap)
-    fmt.Println(array)
   }
 
   return array

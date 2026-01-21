@@ -2,7 +2,6 @@ package main
 
 import (
   "log"
-  // "net/http"
   "github.com/teto99129/csv-normalizer/internal/csv"
   "github.com/gin-gonic/gin"
 )
