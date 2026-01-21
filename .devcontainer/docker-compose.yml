@@ -1,0 +1,16 @@
+services:
+  csv-normalizer:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ~/.config/nvim:/home/dev-user/.config/nvim
+      - /opt/nvim-linux-x86_64:/opt/nvim-linux-x86_64
+      - ~/.local/share:/home/dev-user/.local/share
+      - ~/.cache/nvim:/home/dev-user/.cache/nvim
+      - ..:/app
+
+
